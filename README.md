@@ -1,7 +1,10 @@
 pml-assignement
 ===============
+Executive summary
 
-This is practical machine learning repo
+This document is a result of the Practical Machine Learning Peer Assessments in a report using desk top git-hub application.
+
+The dataset provided for prediction contains multiple. Therefore, a decision is made to use a random forests model wherein there is no need of cross-validating model to get an unbiased estimate model error. The calibration dataset is checked immediately importing in to R console and found some column containing many missing value. Instead of filling missing values, those columns containg less than 60% data were kept out of modeling by removing entire column. The randam forest model is created using training set dividing it into training and validation set. The model accuracy over validation dataset was 0.9992. The sensitivity and specificity of all classes were 1. This model was used to predict 20 samples data provided in test set. The text file of prediction result when uploaded into answer submission page returned all 20 correct answers.
 ##Load all libraries used, and setting seed for reproducibility. 
 
     library(ElemStatLearn)
